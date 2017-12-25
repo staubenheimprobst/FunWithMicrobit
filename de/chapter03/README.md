@@ -1,54 +1,55 @@
-# Hello Micro:bit
+# Hallo Micro:bit
 
-## What will you learn during this chapter ?
+## Was lernst du in diesem Kaptiel?
 
-* Show a text on your BBC Micro:bit
-* Loops
+* anzeigen eines Text auf deinem BBC Micro:bit
+* Schleifen
 
-## How to ask your Micro:bit to say hello
+## Wie du einem Micro:bit hallo sagst
 
-Your Micro:bit can do a lot of things but you need to explain it how to do this.
-It's like when you are stading and you are "importing" what you read inside your mind.
+Dein Micro:bit kann sehr viele Dinge, aber du musst Ihm sagen wer Sie erledigen soll.
+Das ist wie, als wenn du dir überlegst, was du als nächstes tust und es dann ausführst.
 
-So it's time to open **MuEditor** and type these first lines:
+Es ist jetzt Zeit den **MuEditor** zu öffnen und die ersten Zeilen zu schreiben:
 
 ```python
-# This is a COMMENT
+# Das ist ein Kommentar
 from microbit import display
 ```
 
 STOP !
 
-Let's think about this first 2 lines.
-The first one starts with # and it means is a comment.
-A comment is a part of code in Python used...just to comment and it starts with #.
+Lass uns über die ersten zwei Zeilen nachdenken.
+Die erste Zeile startet mit einem # und bedeutet, das es ein Kommentar ist.
+Kommentare sind ein Teil des Code in Python, die verwendet werden um eine Information in Python zu hinterlassen.
 
-The second line is much more important. We are asking Python to import the _display_ module from microbit.
+Die zweite Zeile ist wesentlich wichtiger. Wir sagen Python, das es das Modul _display_ aus microbit laden soll.
 
-But what is a module ?
-Think about a _module_ as a collection of Python code that will help us using the _display__.
+Was ist ein Modul?
+Module sind eine Ansammlung von Python Code die uns dabei helfen das _display__ zu verwenden.
 
 
 now we can ask Micro:bit to display our text
+jetzt können wir dem Micro:bit sagen, das er unseren Text anzeigen soll.
 
 ```python
-# This is a AGAIN a COMMENT
+# Das ist wieder ein Kommentar
 from microbit import display
 
-display.show("Hello PutYourNameHere, I am your Micro:bit")
+display.show("Hallo PutYourNameHere, Ich bin dein Micro:bit")
 ```
 
-What we have here now ?
+Was haben wir hier jetzt?
 
-First and second line are nothing new.
+In der ersten und zweiten Zeile steht nichts neues.
 
-But what about the third line ?
+Aber was ist mit der dritten Zeile?
 
-Well we are using a part of the code, described inside _display_, called _show_.
+Wir verwenden jetzt einen Teil des Code, der in _display_ beschrieben ist, und rufen _show_.
 
-And we are jut putting text after it.
+Danach schreiben wir unseren Text.
 
-Let's try with a different text:
+Lass uns das mit einem anderen Text versuchen:
 
 ```python
 # This is a AGAIN a COMMENT
@@ -57,27 +58,27 @@ from microbit import display
 display.show("Helloo Poland!)
 ```
 
-copy this text in your Mu editor and flash it !
+kopiere diesen Text in dein Mu Editor und flash diesen!
 
-Mmmm.... why are we receiving an error ?
+Mmmm.... warum bekommst du ein Fehler?
 
-* The exclamation mark at the end of the text is causing a problem
-* The text is too short
-* We need a __"__ at the end of the text
-* Helloo (should be Hello) is not grammatically correct
+* Das Ausrufezeichen am Ende des Textes verursacht ein Problem
+* Der Test ist zu kurz
+* Wir brauchen __"__ am Ende des Textes
+* Helloo (es muss Hello heißen) ist grammatikalisch nicht korrekt
 
-## But why only one time ?
+## Aber warum nur einmal?
 
-We put __showed__ our text inside the Micro:bit...but it shows our text only for one timeself.
-What if we want to keep our Micro:bit showing the text ?
+Wir setzen __showed__ in unseren Micro:Bit ... aber er wird nur einmal angezeigt.
+Was ist, wenn ich aber den Text immer sehen möchte?
 
-We need to introduce the concept of __loop__
+Hier wird das Komnzept der Schleife (__loop__) vorgestellt
 
-With a __loop_ we are saying to the Micro:bit to _do something until some condition is respected_
+Mit einer Schleife sagen wir dem Micro:bit, tu es so lang, bis das Ende erreicht ist.
 
-In Python we have different __loops__, we can start using __while__.
+In Python haben wir verschiedene Schleif, wir starten mit der Benutzung der __while__ Schleife.
 
-While literally means _do something until the condition is true_
+While wird so lange ausgeführt, bis die Bedingung whar ist.
 
 ```python
 from microbit import display
@@ -86,7 +87,7 @@ while 1>0:
   display.show("Hello Poland!")
 ```
 
-Let's try again with this code:
+Probiere diesen Code.
 
 ```python
 from microbit import display
@@ -95,8 +96,8 @@ while 1<0:
   display.show("Hello Poland!")
 ```
 
-We just changed the condition with something that is always _False_.
+Wir änderten die Bedingung und Sie wird immer falsch sein!
 
-## What is the difference between these codes ?
+## Was ist der Unterschied bei beiden Code Beispielen?
 
-## Why display is not exactly under while ?
+## Warum ist display nicht direkt unter while?

@@ -1,16 +1,16 @@
-# Animations
+# Animmationen
 
-## What will you learn during this chapter ?
+## Was wir in diesem Kapitel lernen?
 
-* Show a text on your BBC Micro:bit
-* Show an image on your BBC Micro:bit
-* Combine text and images
+* Anzeigen von Text auf deinem BBC Micro:bit
+* Anzeigen von Bildern auf deinem BBC Micro:bit
+* Kombinieren von Bildern und Text
 
-## Showing images
+## Anzeien von Bildern
 
-Showing text is ok....but what about images ?!?!
+Anzeigen von Text ist okay ... aber was ist mit Bilder?!
 
-Let's start with something...happy :)
+Lass uns starten mit etwas witzigem. :)
 
 ```python
 from microbit import *
@@ -18,11 +18,11 @@ from microbit import *
 display.show(Image.HAPPY)
 ```
 
-Did you flash the code inside your Micro:bit ?
+Hast du den Code auf deinen Micro:bit gespielt?
 
-Show us the happy faces!
+Es zeigt sich uns ein klügliches Bild!
 
-This is a list of images that you can use:
+Ein Liste der Bilder, die du verwenden kannst:
 
 ```python
 Image.HEART
@@ -48,9 +48,9 @@ Image.UMBRELLA
 Image.SNAKE
 ```
 
-__Take 5 minutes and play with these images.__
+__Nimm dir 5 Minuten und spiele mit den Bildern.__
 
-Try also to put more then one image together!
+Versuche das und nimm mal mehr als ein Bild!
 
 ```python
 from microbit import *
@@ -59,17 +59,17 @@ display.show(Image.HAPPY)
 display.show(Image.HOUSE)
 ```
 
-Let's discuss about the result together :)
+Lass uns über das Ergebnis reden. :)
 
 # Showing 2 images
 
-We don't see the first image because....Micro:bit execute the second display so fast that we cannot see the first.
+Wir sehen nicht das erste Bild ....Micro:bit führt das zweite Bild so schnell aus, das wir das erste nicht sehen.
 
-Let's ask the Micro:bit to...sleep.
+Lass uns dem Micro:bit sagen...er soll schlafen (sleep).
 
-There is special command called sleep(seconds*1000) that literally put your Micro:bit under a special kind of sleep.
+Das spezielle Kommando heißt sleep(seconds*1000) versetzt dein Micro:bit zu einer bestimmten Zeit in Schlafmodus.
 
-Let's try this command, inside (seconds*1000) you should substitute _seconds_ with the number of seconds you want your Micro:bit to sleep 
+Fügen Sie deiese Kommando sleep(seconds*1000) hinzu und ersetzen Sie _seconds_ mit einer Zahl die der Micro:bit schlafen soll.
 
 ```python
 from microbit import *
@@ -79,14 +79,13 @@ sleep(10*1000)
 display.show(Image.HOUSE)
 ```
 
-Flash this code and tell us about the result!
+Flash den Code und beschreibe das Resultat.
 
-# Build your image!
+# Bau dein Bild!
 
-Micro:bit knows already a lot of images but we can build also new images.
+Der Micro:bit kennte viele Bilder. Aber lass uns ein eigenes Bild bauen.
 
-This is how it works
-
+So funktioniert das.
 
 ```python
 from microbit import *
@@ -99,20 +98,20 @@ new_image = Image(
              "11111")
 display.show(new_image)
 ```
-We have just create a new image!
+Wir haben ein neues Bild erzeugt!
 
-But what are those numbers ?
+Aber was sagen die Nummer aus?
 
-We have five lines and five numbers in each line....
+Wir haben fünf Zeilen und fünf Nummern in jeder Zeile ...
 
-They are our leds! 
+Das sind unsere LED's!
 
-Each number represent a led on our Micro:bit from, from the left top.
+Jeder Nummer repräsentiert eine LED auf unserem Micro:Bit, von Links oben.
 
-But we have 0, 1 and 9.
+Aber wir haben 0, 1 und 9.
 
-Can you say what does it change between putting 0, 1 or 9 ?
+Kannst du sagen, was sich verändert wenn du die Zahlen zwischen 0, 1 oder 9 veränderst?
 
-hint: you can use numbers between 0 and 9.
+Hinweis: du kannst Nummern zwischen 0 und 9 verwenden.
 
-Experiment!
+Experimentiere!
